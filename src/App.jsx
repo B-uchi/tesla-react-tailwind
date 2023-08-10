@@ -1,13 +1,13 @@
 import React from "react";
+import NavBar from "./components/navbar/navbar";
+import Model3 from "./components/model 3/model3";
 
 const App = () => {
   return (
-    <>
-      <div className="bg-slate-500 w-2">
-        <h1>Hello World</h1>
-        <p>This is a test paragraph element</p>
-      </div>
-    </>
+    <main>
+      <NavBar/>
+      <Model3/>
+    </main>
   );
 };
 
