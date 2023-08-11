@@ -17,7 +17,7 @@ const Model3 = () => {
             Custom Order
           </button>
         </div>
-        <small className="mt-3">
+        <small className="mt-3 small">
           3 months free Supercharging when you take delivery of a new Inventory
           vehicle by Jun 30
         </small>
