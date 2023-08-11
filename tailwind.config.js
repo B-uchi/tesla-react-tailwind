@@ -6,6 +6,9 @@ export default {
     './index.html'
   ],
   theme: {
+    fontFamily: {
+      'nav-font': ['Nunito', 'sans-serif']
+    },
     extend: {
       backgroundImage: {
         '1': "url('./src/assets/1.webp')",

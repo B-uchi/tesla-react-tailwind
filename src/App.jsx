@@ -10,7 +10,7 @@ import Accessories from "./components/accessories/accessories";
 
 const App = () => {
   return (
-    <main style={{height: "100vh", scrollSnapType: "y mandatory",overflowX: "hidden", overflow: scroll}}>
+    <main className="main" style={{height: "100vh", scrollSnapType: "y mandatory",overflowX: "hidden", overflow: scroll, overflowY: "hidden"}}>
       <NavBar/>
       <Model3/>
       <ModelY/>

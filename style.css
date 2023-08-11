@@ -3,26 +3,67 @@
 @tailwind utilities;
 
 @layer utilities {
-    .nav-ul {
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-      font-size: 17px;
-    }
+  .nav-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 17px;
+  }
 }
-li{
-    cursor: pointer;
-    padding: 5px 8px;
-    border-radius: 13px;
+li {
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 13px;
 }
-li:hover{
-    background-color: #f4f4f4cc;
-    transition: .2s ease-in;
+li:hover {
+  background-color: #f4f4f4cc;
+  transition: 0.2s ease-in;
 }
-.cover{
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+.cover {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.top > h1 {
+  font-size: 58px;
+}
+.top > p {
+  margin-top: -10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.top > small {
+  font-size: 17px;
+}
+#btn-two{
+    color: #5c5e62;
+}
+#btn-one{
+    color: #efefef;
+}
+.footer{
+  color: #5c5e62;
+}
+.bottom{
+  gap: 55px;
+}
+
+@media (max-width:425px){
+  .bottom{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .main{
+    overflow-y: scroll;
+    overflow: scroll;
+    scroll-snap-type: none;
+  }
+  .footer-container{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+  }
 }
