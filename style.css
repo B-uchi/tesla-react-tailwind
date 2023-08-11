@@ -80,3 +80,14 @@ li:hover {
     margin-bottom: 10px;
   }
 }
+@media (max-width:768px){
+  .desktop{
+    display: none;
+  }
+  
+  .nav{
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
