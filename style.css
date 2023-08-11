@@ -37,55 +37,64 @@ li:hover {
 .top > small {
   font-size: 17px;
 }
-#btn-two{
-    color: #5c5e62;
-}
-#btn-one{
-    color: #efefef;
-}
-.footer{
+#btn-two {
   color: #5c5e62;
 }
-.bottom{
+#btn-one {
+  color: #efefef;
+}
+.footer {
+  color: #5c5e62;
+}
+.bottom {
   gap: 55px;
 }
+.hidden {
+  display: none;
+}
 
-@media (max-width:425px){
-  .bottom{
+@media (max-width: 425px) {
+  .hidden {
+    display: block;
+  }
+  .bottom {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
-  .main{
+  .main {
     overflow-y: scroll;
     overflow: scroll;
     scroll-snap-type: none;
   }
-  .footer-container{
+  .footer-container {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr;
   }
-  .desktop{
+  .desktop {
     display: none;
   }
-  .top{
+  .top {
     margin-top: 150px;
   }
-  .nav{
+  .nav {
     justify-content: space-around;
   }
-  .small{
+  .small {
     text-align: center;
     margin-bottom: 10px;
   }
 }
-@media (max-width:768px){
-  .desktop{
+@media (max-width: 768px) {
+  .desktop {
     display: none;
   }
-  
-  .nav{
+
+  .hidden {
+    display: block;
+  }
+  .nav {
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
