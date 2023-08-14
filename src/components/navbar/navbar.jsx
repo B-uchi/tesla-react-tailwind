@@ -1,5 +1,8 @@
 import React from 'react'
 import pic from '../../assets/logo.png'
+import {FiHelpCircle} from 'react-icons/fi'
+import {BsGlobe2} from 'react-icons/bs'
+import {MdOutlineAccountCircle} from 'react-icons/md'
 
 const NavBar = () => {
   return (
@@ -16,9 +19,9 @@ const NavBar = () => {
         </div>
         <div className="">
             <ul className='nav-ul desktop'>
-                <li>Shop</li>
-                <li>Account</li>
-                <li>Menu</li>
+                <FiHelpCircle size={25}/>
+                <BsGlobe2 size={25}/>
+                <MdOutlineAccountCircle size={25}/>
             </ul>
             <ul className='nav-ul hidden'>
                 <li>Menu</li>
